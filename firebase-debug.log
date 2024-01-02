@@ -1,0 +1,1787 @@
+[debug] [2023-12-30T17:27:44.985Z] ----------------------------------------------------------------------
+[debug] [2023-12-30T17:27:44.988Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\osman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-30T17:27:44.988Z] CLI Version:   13.0.2
+[debug] [2023-12-30T17:27:44.989Z] Platform:      win32
+[debug] [2023-12-30T17:27:44.989Z] Node Version:  v21.1.0
+[debug] [2023-12-30T17:27:44.989Z] Time:          Sat Dec 30 2023 20:27:44 GMT+0300 (GMT+03:00)
+[debug] [2023-12-30T17:27:44.989Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-30T17:27:45.059Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-30T17:27:45.060Z] > authorizing via signed-in user (odegeg9@gmail.com)
+[debug] [2023-12-30T17:27:45.060Z] [iam] checking project fresh-token-d3bc1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-30T17:27:45.062Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions [none]
+[debug] [2023-12-30T17:27:45.062Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions x-goog-quota-user=projects/fresh-token-d3bc1
+[debug] [2023-12-30T17:27:45.062Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-30T17:27:46.133Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions 200
+[debug] [2023-12-30T17:27:46.133Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-30T17:27:46.134Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1 [none]
+[debug] [2023-12-30T17:27:46.494Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1 200
+[debug] [2023-12-30T17:27:46.494Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1 {"projectId":"fresh-token-d3bc1","projectNumber":"1076235205916","displayName":"Fresh Token","name":"projects/fresh-token-d3bc1","resources":{"hostingSite":"fresh-token-d3bc1","storageBucket":"fresh-token-d3bc1.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_ece75157-2273-4e2c-a9b0-cd4d8ea64802"}
+[debug] [2023-12-30T17:27:50.657Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites pageToken=&pageSize=10
+[debug] [2023-12-30T17:27:51.890Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites 200
+[debug] [2023-12-30T17:27:51.890Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites {"sites":[{"name":"projects/fresh-token-d3bc1/sites/fresh-token-d3bc1","defaultUrl":"https://fresh-token-d3bc1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-30T17:27:51.890Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites 
+[debug] [2023-12-30T17:27:52.236Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites 200
+[debug] [2023-12-30T17:27:52.236Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites {"sites":[{"name":"projects/fresh-token-d3bc1/sites/fresh-token-d3bc1","defaultUrl":"https://fresh-token-d3bc1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-30T17:27:52.237Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1/webApps/-/config [none]
+[debug] [2023-12-30T17:27:53.034Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1/webApps/-/config 200
+[debug] [2023-12-30T17:27:53.034Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1/webApps/-/config {"projectId":"fresh-token-d3bc1","appId":"1:1076235205916:web:b948978d4407ec67fa4ed9","storageBucket":"fresh-token-d3bc1.appspot.com","locationId":"us-central","apiKey":"AIzaSyBKXUc_ebvBVvrI9ctyil6JcnIL17ZVgfw","authDomain":"fresh-token-d3bc1.firebaseapp.com","messagingSenderId":"1076235205916","measurementId":"G-9EKS2B9DQZ"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-30T17:28:02.114Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 [none]
+[debug] [2023-12-30T17:28:03.157Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 200
+[debug] [2023-12-30T17:28:03.157Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 {"name":"projects/fresh-token-d3bc1/sites/fresh-token-d3bc1","defaultUrl":"https://fresh-token-d3bc1.web.app","type":"DEFAULT_SITE"}
+[info]    Linting and checking validity of types ...
+
+[info]  ⨯ ESLint must be installed in order to run during builds: yarn add --dev eslint
+
+[info]    ▲ Next.js 14.0.3
+
+[info] 
+   Creating an optimized production build ...
+
+[info] 
+
+[info] 🌼   daisyUI 4.0.5
+
+[info] ├─ ✔︎ 32 themes added		https://daisyui.com/docs/themes
+
+[info] ╰─ ❤︎ Support daisyUI project:	https://opencollective.com/daisyui
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Collecting page data ...
+
+[info] (node:17948) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:15596) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:10200) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:17444) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:10056) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]    Generating static pages (0/33) ...
+
+[info]    Generating static pages (8/33) 
+
+[info] [
+  {
+    nameInput: 'Coq Inu',
+    contactAddress: '0x420fca0121dc28039145009570975747295f2329',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FCoq%20Inu%2Fphoto_2023-12-07_20-46-59.jpgae6b14ce-582b-4d47-8940-fec3af1d1a18?alt=media&token=eaaf1b80-6632-48fc-a50e-4b020a610cc5',
+    discordURL: 'https://discord.gg/5Nde2b9B3m',
+    symbol: 'COQ',
+    websiteURL: 'https://www.coqinu.com/',
+    customChart: '',
+    network: 'Avalanche (AVAX)',
+    cgURL: 'https://coingecko.com/en/coins/coq-inu',
+    year: '2023',
+    approved: 24,
+    cmcURL: 'https://coinmarketcap.com/currencies/coq-inu/',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    otherURL: '',
+    month: 'DECEMBER',
+    description: 'We are the #1 meme coin on AVAX. Founded by well respected members of the community. They took no distribution and put the entire supply of the coin with 150 avax in initial liquidity. The contract has been fully renounced and liquidity burned.',
+    twitterURL: 'https://twitter.com/CoqInuAvax',
+    day: '7',
+    customSwap: '',
+    telegramURL: 'https://t.me/CoqInuAvax',
+    vote: 0,
+    creatorEmail: 'odegeg9@gmail.com',
+    id: 'GaKpTtn8a8QFOkYmW5Vh'
+  },
+  {
+    symbol: 'CIF',
+    creatorEmail: 'odegeg9@gmail.com',
+    vote: 0,
+    websiteURL: 'https://catwifhatcoin.com/',
+    approved: 23,
+    network: 'Solana (SOL)',
+    otherURL: '',
+    discordURL: '',
+    nameInput: 'CATWIFHAT',
+    day: '12',
+    year: '2023',
+    contactAddress: 'G3vWvAaXPHCnncnyAbq6yBRXqfRtEV3h7vExzasZeT6g',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FCATWIFHAT%2Fphoto_2023-12-28_12-30-13.jpg4e69fdcb-c8da-40e2-bf03-4f2d6721e1ab?alt=media&token=744928c1-08c8-45be-9e30-3fd9343b87c9',
+    customChart: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/catwifhat/',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    twitterURL: 'https://twitter.com/CatwifHatcoin?t=_PyGOxs3rN1MDkAtANCvog&s=09',
+    month: 'DECEMBER',
+    cgURL: 'https://www.coingecko.com/coins/catwifhat',
+    telegramURL: 'https://t.me/CatWifHatSol',
+    description: 'really just a cat wif a hat',
+    customSwap: '',
+    id: 'TMXtx8U2UW29Fagtp9JM'
+  },
+  {
+    twitterURL: 'https://twitter.com/DaddyBonkSOL',
+    description: 'DaddyBonk is the official Daddy of BONK. We celebrate the father and son story with DaddyBonk 🐶🐕',
+    telegramURL: 'https://t.me/daddybonksol',
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FDADDY%20BONK%2Fphoto_2023-12-29_17-25-30.jpg748b0984-2678-491f-be41-97413efd9146?alt=media&token=195078b2-1280-483d-b434-c4ba3bf1de6d',
+    symbol: 'DBONK',
+    otherURL: '',
+    network: 'Solana (SOL)',
+    vote: 0,
+    day: '29',
+    customSwap: '',
+    cmcURL: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    nameInput: 'DADDY BONK',
+    cgURL: '',
+    websiteURL: 'https://daddybonk.xyz/',
+    contactAddress: '6sWet5H2qNpXnV5CwxSmRThx4z3uVtdjHqRB4VyMkJ8Z',
+    discordURL: '',
+    month: 'DECEMBER',
+    year: '2023',
+    approved: 22,
+    id: 'uZC9NMS52C95cdWIfV8G'
+  },
+  {
+    cmcURL: '',
+    twitterURL: 'https://x.com/solyonsol',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FSolamander%2Fphoto_2023-12-26_20-18-58.jpg3d0cf3e3-f9a8-44bf-b376-0309cbcb5021?alt=media&token=48bd9617-ba46-47d5-a665-7baa7ad26e31',
+    discordURL: '',
+    websiteURL: 'https://solyonsol.com/',
+    customChart: '',
+    symbol: 'SOLY',
+    day: '26',
+    month: 'DECEMBER',
+    vote: 0,
+    nameInput: 'Solamander',
+    customSwap: '',
+    network: 'Solana (SOL)',
+    creatorEmail: 'odegeg9@gmail.com',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    otherURL: '',
+    contactAddress: 'CUwif1FiX5b3bwwb2n5Bm35AixvnR8LJjGUVmEwNZNgR',
+    approved: 21,
+    telegramURL: 'https://t.me/SolyOnSol',
+    cgURL: '',
+    year: '2023',
+    description: 'Soly aspires to be the official face of Solana, ready to make a lasting impression in the dynamic realm of cryptocurrency.',
+    id: 'W9um7pJdR7xvVXNbCDLY'
+  },
+  {
+    nameInput: 'Block',
+    network: 'Solana (SOL)',
+    cgURL: '',
+    contactAddress: '2zwuFv4tzMrJMA3Gq5nNH3i4ojWPtCkjmGzTMXe4RpMc',
+    year: '2023',
+    discordURL: '',
+    month: 'DECEMBER',
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    customSwap: '',
+    websiteURL: 'https://www.blocksol.vip/',
+    otherURL: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FBlock%2Fphoto_2023-12-25_13-30-18.jpg084c0cf1-66e3-4885-97b1-568caf2bf31b?alt=media&token=fb10ee38-ae67-46bf-8e28-2e89fdfd4c9e',
+    approved: 19,
+    telegramURL: 'https://t.me/Block_SOL',
+    vote: 0,
+    symbol: 'BLOCK',
+    day: '24',
+    twitterURL: 'https://x.com/blockonsol?t=UEjvERWjT1NVYU8tEyIHzQ&s=09',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    description: 'SOLANA FOUNDER WANNA LAUNCH $BLOCK\n' +
+      'SO WE ARE HERE WITH $BLOCK (meme coin)\n' +
+      'LET’S TAKE IT TO MULTI MILLIONS $BLOCK BY $BLOCK',
+    cmcURL: '',
+    id: 'RnAb27Y2kf2kKbUsActN'
+  },
+  {
+    month: 'DECEMBER',
+    customSwap: '',
+    telegramURL: 'https://t.me/SaitamaOfficialSOL',
+    network: 'Solana (SOL)',
+    nameInput: 'Saitama',
+    description: 'Exciting news! Introducing SOLTAMA, the cryptocurrency ready to take you on a journey full of adventures! 💎',
+    otherURL: '',
+    vote: 0,
+    approved: 18,
+    customChart: '',
+    day: '28',
+    twitterURL: 'https://x.com/SoltamaSolana',
+    cmcURL: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    year: '2023',
+    cgURL: '',
+    creatorEmail: 'odegeg9@gmail.com',
+    websiteURL: 'http://soltama.space/',
+    contactAddress: 'BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FSaitama%2Fphoto_2023-12-29_03-33-57.jpg8636b9ff-007c-4715-88fe-171f23791b96?alt=media&token=ae9aaeec-a190-4fa8-bdb3-07a835e18fb2',
+    symbol: 'SOLTAMA',
+    discordURL: '',
+    id: 'AjVcFIKC123VEE9Kc1XD'
+  },
+  {
+    twitterURL: 'https://twitter.com/adakovenko',
+    symbol: 'ADA',
+    month: 'DECEMBER',
+    description: 'Ada is the beloved dog of Anatoly Yakovenko, the Founder and CEO of Solana.',
+    websiteURL: 'https://adaonsol.com/',
+    vote: 0,
+    customSwap: '',
+    discordURL: '',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    otherURL: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/ada/',
+    year: '2023',
+    nameInput: 'Ada',
+    network: 'Solana (SOL)',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FAda%2Fphoto_2023-12-15_02-24-06.jpgae49bed1-1d32-477a-9763-50ea9e92f9a4?alt=media&token=cd17cbae-429f-444a-9550-eec0bf610e21',
+    contactAddress: 'E4Q5pLaEiejwEQHcM9GeYSQfMyGy8DJ4bPWgeYthn24v',
+    day: '15',
+    creatorEmail: 'odegeg9@gmail.com',
+    cgURL: '',
+    approved: 17,
+    customChart: '',
+    telegramURL: 'https://t.me/Ada_Solana',
+    id: 'AAUyreA96f0qlkAj54gk'
+  },
+  {
+    approved: 16,
+    contactTelegramURL: 'VG',
+    discordURL: '',
+    day: '20',
+    contactAddress: '7iT1GRYYhEop2nV1dyCwK2MGyLmPHq47WhPGSwiqcUg5',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FanaloS%2Fphoto_2023-12-16_21-39-29%20(2).jpge13702c8-6fbd-4920-810e-a2c3a4e37629?alt=media&token=8fd20b1d-ae08-4526-98da-7b5d183e586c',
+    otherURL: 'https://solscan.io/token/7iT1GRYYhEop2nV1dyCwK2MGyLmPHq47WhPGSwiqcUg5',
+    cmcURL: 'https://coinmarketcap.com/currencies/analos/',
+    description: "GRAB YOUR $ANALOS AND MOONWALK TO THE MOON – IT'S THE ONLY WAY TO GO FORWARD",
+    vote: 0,
+    twitterURL: 'https://twitter.com/analos_coin_',
+    network: 'Solana (SOL)',
+    customChart: '',
+    creatorEmail: 'odegeg9@gmail.com',
+    customSwap: '',
+    cgURL: 'https://coingecko.com/coins/analos',
+    year: '2023',
+    symbol: 'ANALOS',
+    month: 'DECEMBER',
+    websiteURL: 'https://www.analos.meme/',
+    nameInput: 'analoS',
+    telegramURL: 'https://t.me/analos_coin',
+    id: '0YsK7wJlkHAWHmjRWKeK'
+  },
+  {
+    cgURL: 'https://coingecko.com/en/coins/ponke',
+    customChart: '',
+    month: 'DECEMBER',
+    symbol: 'PONKE',
+    contactAddress: '5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC',
+    day: '24',
+    telegramURL: 'https://t.me/ponkesol',
+    twitterURL: 'https://x.com/ponkesol',
+    otherURL: '',
+    websiteURL: 'https://www.ponke.xyz/',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    vote: 0,
+    customSwap: '',
+    nameInput: 'PONKE',
+    description: 'Hi my name is PONKE. \n' +
+      '\n' +
+      'Im a degenerate gambler that doesn’t get along with just anyone but I have a lot of friends. I get angry sometimes but deep down I am a good monkey.',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FPONKE%2Fphoto_2023-12-24_03-31-13.jpg708887a7-9a81-46e8-970e-3e77291b125c?alt=media&token=887e45d5-9bbc-4154-9c92-9ff7f578b245',
+    network: 'Solana (SOL)',
+    discordURL: '',
+    year: '2023',
+    approved: 15,
+    creatorEmail: 'odegeg9@gmail.com',
+    cmcURL: '',
+    id: 'dU1hvSKstUcEmWzgjdV2'
+  },
+  {
+    month: 'DECEMBER',
+    symbol: 'BONKA',
+    websiteURL: 'https://www.bonkainu.xyz/',
+    network: 'Solana (SOL)',
+    approved: 11,
+    year: '2023',
+    vote: 0,
+    customSwap: '',
+    nameInput: 'Bonka',
+    contactAddress: 'JA5KRHnXv2fuPjQoGwCBw2RXKsbiWMDJ9adPqpZUMDzV',
+    discordURL: '',
+    twitterURL: 'https://twitter.com/bonkainu',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FBonka%2Fphoto_2023-12-16_20-36-28.jpgc30a6bf8-0c12-4878-b348-c6c515612a03?alt=media&token=53b00311-b04f-4c7f-acc8-c85417de2dd7',
+    telegramURL: 'https://t.me/bonkainu',
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    otherURL: '',
+    day: '16',
+    description: 'The cute girlfriend of Bonk',
+    id: '6326MYKywzye6U8ex9Bf'
+  }
+]
+
+[info] [
+  {
+    telegramURL: 'https://t.me/frozyinuglobal',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    vote: 1,
+    approved: 1,
+    customChart: 'https://www.dextools.io/app/en/bnb/pair-explorer/0xe7bef5fe2d27b7b36b817e64ad75ec518b1060df',
+    symbol: 'FRZ',
+    network: 'Binance Smart Chain (BSC)',
+    year: '2023',
+    customSwap: 'https://pancakeswap.finance/swap?outputCurrency=0x242F023402C0A1292dFf73E2aBc96c1c991ef1F3',
+    otherURL: 'https://www.youtube.com/@FrozyINU',
+    cmcURL: 'https://coinmarketcap.com/tr/currencies/frozy-inu/',
+    websiteURL: 'https://frozyinu.com',
+    creatorEmail: 'mamiamk@gmail.com',
+    description: 'Frozy Inu is different from other meme tokens. The only goal of other meme tokens is to make a profit. But Frozy Inu has two main goals: Make a profit and save the World!',
+    discordURL: '',
+    contactAddress: '0x242F023402C0A1292dFf73E2aBc96c1c991ef1F3',
+    twitterURL: 'https://twitter.com/frozyinu',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/mamiamk%40gmail.com%2FFrozy%20Inu%2Fsnowfox.pngafa973e9-1cf5-4bf1-ae54-1f75bf615e76?alt=media&token=1a5ace21-f262-4a53-8ee3-ad4eda82e7e6',
+    nameInput: 'Frozy Inu',
+    month: 'APRIL',
+    day: '30',
+    id: 'cs2rgBFnZCoA8nV5MkHk'
+  },
+  {
+    nameInput: 'analoS',
+    day: '20',
+    creatorEmail: 'odegeg9@gmail.com',
+    twitterURL: 'https://twitter.com/analos_coin_',
+    cmcURL: 'https://coinmarketcap.com/currencies/analos/',
+    symbol: 'ANALOS',
+    discordURL: '',
+    customSwap: '',
+    otherURL: 'https://solscan.io/token/7iT1GRYYhEop2nV1dyCwK2MGyLmPHq47WhPGSwiqcUg5',
+    year: '2023',
+    description: "GRAB YOUR $ANALOS AND MOONWALK TO THE MOON – IT'S THE ONLY WAY TO GO FORWARD",
+    telegramURL: 'https://t.me/analos_coin',
+    network: 'Solana (SOL)',
+    customChart: '',
+    cgURL: 'https://coingecko.com/coins/analos',
+    month: 'DECEMBER',
+    vote: 0,
+    contactTelegramURL: 'VG',
+    approved: 16,
+    websiteURL: 'https://www.analos.meme/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FanaloS%2Fphoto_2023-12-16_21-39-29%20(2).jpge13702c8-6fbd-4920-810e-a2c3a4e37629?alt=media&token=8fd20b1d-ae08-4526-98da-7b5d183e586c',
+    contactAddress: '7iT1GRYYhEop2nV1dyCwK2MGyLmPHq47WhPGSwiqcUg5',
+    id: '0YsK7wJlkHAWHmjRWKeK'
+  },
+  {
+    month: 'DECEMBER',
+    vote: 0,
+    contactAddress: '7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr',
+    nameInput: 'Popcat',
+    otherURL: '',
+    approved: 10,
+    description: "Let me guess, you missed $BONK on sol and now you're down bad trying to find the next 1000x play?\n" +
+      "Dead wallets, pump and dumps, rug pulls... The market can seem lifeless at times. Buy fear not, we've been there before.\n" +
+      "Now it's time to save the market, and don't miss $POPCAT",
+    twitterURL: 'https://twitter.com/Popcatsol',
+    customSwap: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/popcat/',
+    network: 'Solana (SOL)',
+    cgURL: 'https://coingecko.com/coins/popcat',
+    symbol: 'POPCAT',
+    year: '2023',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    websiteURL: 'https://popcatsol.com/',
+    discordURL: '',
+    customChart: '',
+    creatorEmail: 'odegeg9@gmail.com',
+    telegramURL: 'https://t.me/popcatsol',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FPopcat%2Fphoto_2023-12-13_22-18-46.jpgb85081eb-72b7-4488-a4bd-d79c1e25064f?alt=media&token=7252454e-cb19-4bc4-aa70-632f857bfd33',
+    day: '12',
+    id: '2F4hJRzwLeiy5pmUWUd5'
+  },
+  {
+    symbol: 'VINU',
+    cgURL: 'https://coingecko.com/coins/vita-inu',
+    websiteURL: 'https://vitainu.org/',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    month: 'JUNE',
+    description: 'Vita Inu (VINU) is the governance token of the VINU Ecosystem and is native token the Vite DAG chain. VINU is the world’s first fast, feeless (and cheeky) dog-themed coin with high TPS and smart contracts.',
+    discordURL: 'https://discord.com/invite/m7JxNcSt7e',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FVita%20Inu%2Fphoto_2021-11-30_11-49-50.jpgdf0571b0-768a-4685-93ee-59bce54f874f?alt=media&token=d3c1a4b3-79e4-4969-ae99-a29776966b32',
+    creatorEmail: 'odegeg9@gmail.com',
+    year: '2022',
+    contactAddress: '0xAFCdd4f666c84Fed1d8BD825aA762e3714F652c9',
+    cmcURL: 'https://coinmarketcap.com/currencies/vita-inu/',
+    customSwap: '',
+    vote: 0,
+    nameInput: 'Vita Inu',
+    otherURL: 'https://vita-inu.gitbook.io/whitepaper/',
+    telegramURL: 'https://t.me/VitaInu',
+    day: '23',
+    network: 'Ethereum (ETH)',
+    approved: 2,
+    twitterURL: 'https://twitter.com/VitaInuCoin',
+    customChart: '',
+    id: '3JQjLJzbhBBYGA5DiKQD'
+  },
+  {
+    cgURL: 'https://coingecko.com/coins/grok-inu',
+    discordURL: '',
+    otherURL: 'https://grokinucoin.gitbook.io/whitepaper/',
+    customChart: '',
+    description: 'Bonk inu + Grok = Grok inu The last inu 2023 is GROKINU',
+    approved: 8,
+    nameInput: 'Grok Inu',
+    customSwap: '',
+    websiteURL: 'https://grokinucoin.vip/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FGrok%20Inu%2Fphoto_2023-12-09_06-16-36.jpgf16b6320-a0c1-4476-9e5f-4b7ee8817af9?alt=media&token=6a5960b5-6bae-4e56-b4a6-196f99a134ef',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    telegramURL: 'https://t.me/grokinu_portal',
+    symbol: 'GROKINU',
+    contactAddress: '0xd08b9e557d1f64c8dd50a168453ea302a83e47fc',
+    month: 'DECEMBER',
+    creatorEmail: 'odegeg9@gmail.com',
+    day: '13',
+    year: '2023',
+    twitterURL: 'https://twitter.com/RealgrokinuBSC',
+    network: 'Binance Smart Chain (BSC)',
+    vote: 0,
+    cmcURL: 'https://coinmarketcap.com/currencies/grok-inu/',
+    id: '3kL1gqhX7wxxKgah9nGJ'
+  },
+  {
+    telegramURL: 'https://t.me/bonkainu',
+    approved: 11,
+    network: 'Solana (SOL)',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FBonka%2Fphoto_2023-12-16_20-36-28.jpgc30a6bf8-0c12-4878-b348-c6c515612a03?alt=media&token=53b00311-b04f-4c7f-acc8-c85417de2dd7',
+    customSwap: '',
+    symbol: 'BONKA',
+    vote: 0,
+    contactTelegramURL: '@ferrouswroughtnaut',
+    month: 'DECEMBER',
+    contactAddress: 'JA5KRHnXv2fuPjQoGwCBw2RXKsbiWMDJ9adPqpZUMDzV',
+    discordURL: '',
+    otherURL: '',
+    customChart: '',
+    nameInput: 'Bonka',
+    creatorEmail: 'odegeg9@gmail.com',
+    twitterURL: 'https://twitter.com/bonkainu',
+    description: 'The cute girlfriend of Bonk',
+    year: '2023',
+    websiteURL: 'https://www.bonkainu.xyz/',
+    day: '16',
+    id: '6326MYKywzye6U8ex9Bf'
+  },
+  {
+    contactAddress: 'E4Q5pLaEiejwEQHcM9GeYSQfMyGy8DJ4bPWgeYthn24v',
+    cgURL: '',
+    otherURL: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FAda%2Fphoto_2023-12-15_02-24-06.jpgae49bed1-1d32-477a-9763-50ea9e92f9a4?alt=media&token=cd17cbae-429f-444a-9550-eec0bf610e21',
+    approved: 17,
+    network: 'Solana (SOL)',
+    customChart: '',
+    vote: 0,
+    twitterURL: 'https://twitter.com/adakovenko',
+    symbol: 'ADA',
+    month: 'DECEMBER',
+    websiteURL: 'https://adaonsol.com/',
+    description: 'Ada is the beloved dog of Anatoly Yakovenko, the Founder and CEO of Solana.',
+    year: '2023',
+    cmcURL: 'https://coinmarketcap.com/currencies/ada/',
+    discordURL: '',
+    customSwap: '',
+    telegramURL: 'https://t.me/Ada_Solana',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    creatorEmail: 'odegeg9@gmail.com',
+    nameInput: 'Ada',
+    day: '15',
+    id: 'AAUyreA96f0qlkAj54gk'
+  },
+  {
+    description: 'Exciting news! Introducing SOLTAMA, the cryptocurrency ready to take you on a journey full of adventures! 💎',
+    cmcURL: '',
+    cgURL: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    network: 'Solana (SOL)',
+    nameInput: 'Saitama',
+    customChart: '',
+    customSwap: '',
+    vote: 0,
+    websiteURL: 'http://soltama.space/',
+    day: '28',
+    twitterURL: 'https://x.com/SoltamaSolana',
+    approved: 18,
+    creatorEmail: 'odegeg9@gmail.com',
+    telegramURL: 'https://t.me/SaitamaOfficialSOL',
+    month: 'DECEMBER',
+    discordURL: '',
+    symbol: 'SOLTAMA',
+    contactAddress: 'BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz',
+    year: '2023',
+    otherURL: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FSaitama%2Fphoto_2023-12-29_03-33-57.jpg8636b9ff-007c-4715-88fe-171f23791b96?alt=media&token=ae9aaeec-a190-4fa8-bdb3-07a835e18fb2',
+    id: 'AjVcFIKC123VEE9Kc1XD'
+  },
+  {
+    day: '7',
+    month: 'DECEMBER',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FCoq%20Inu%2Fphoto_2023-12-07_20-46-59.jpgae6b14ce-582b-4d47-8940-fec3af1d1a18?alt=media&token=eaaf1b80-6632-48fc-a50e-4b020a610cc5',
+    otherURL: '',
+    symbol: 'COQ',
+    contactAddress: '0x420fca0121dc28039145009570975747295f2329',
+    customSwap: '',
+    discordURL: 'https://discord.gg/5Nde2b9B3m',
+    cgURL: 'https://coingecko.com/en/coins/coq-inu',
+    twitterURL: 'https://twitter.com/CoqInuAvax',
+    nameInput: 'Coq Inu',
+    vote: 0,
+    telegramURL: 'https://t.me/CoqInuAvax',
+    creatorEmail: 'odegeg9@gmail.com',
+    websiteURL: 'https://www.coqinu.com/',
+    network: 'Avalanche (AVAX)',
+    description: 'We are the #1 meme coin on AVAX. Founded by well respected members of the community. They took no distribution and put the entire supply of the coin with 150 avax in initial liquidity. The contract has been fully renounced and liquidity burned.',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    year: '2023',
+    customChart: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/coq-inu/',
+    approved: 24,
+    id: 'GaKpTtn8a8QFOkYmW5Vh'
+  },
+  {
+    cmcURL: '',
+    telegramURL: 'https://t.me/Block_SOL',
+    cgURL: '',
+    month: 'DECEMBER',
+    customChart: '',
+    nameInput: 'Block',
+    discordURL: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FBlock%2Fphoto_2023-12-25_13-30-18.jpg084c0cf1-66e3-4885-97b1-568caf2bf31b?alt=media&token=fb10ee38-ae67-46bf-8e28-2e89fdfd4c9e',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    day: '24',
+    creatorEmail: 'odegeg9@gmail.com',
+    twitterURL: 'https://x.com/blockonsol?t=UEjvERWjT1NVYU8tEyIHzQ&s=09',
+    otherURL: '',
+    vote: 0,
+    approved: 19,
+    description: 'SOLANA FOUNDER WANNA LAUNCH $BLOCK\n' +
+      'SO WE ARE HERE WITH $BLOCK (meme coin)\n' +
+      'LET’S TAKE IT TO MULTI MILLIONS $BLOCK BY $BLOCK',
+    symbol: 'BLOCK',
+    year: '2023',
+    contactAddress: '2zwuFv4tzMrJMA3Gq5nNH3i4ojWPtCkjmGzTMXe4RpMc',
+    customSwap: '',
+    websiteURL: 'https://www.blocksol.vip/',
+    network: 'Solana (SOL)',
+    id: 'RnAb27Y2kf2kKbUsActN'
+  },
+  {
+    otherURL: '',
+    year: '2023',
+    nameInput: 'CATWIFHAT',
+    customChart: '',
+    telegramURL: 'https://t.me/CatWifHatSol',
+    month: 'DECEMBER',
+    cmcURL: 'https://coinmarketcap.com/currencies/catwifhat/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FCATWIFHAT%2Fphoto_2023-12-28_12-30-13.jpg4e69fdcb-c8da-40e2-bf03-4f2d6721e1ab?alt=media&token=744928c1-08c8-45be-9e30-3fd9343b87c9',
+    creatorEmail: 'odegeg9@gmail.com',
+    discordURL: '',
+    description: 'really just a cat wif a hat',
+    vote: 0,
+    network: 'Solana (SOL)',
+    contactAddress: 'G3vWvAaXPHCnncnyAbq6yBRXqfRtEV3h7vExzasZeT6g',
+    websiteURL: 'https://catwifhatcoin.com/',
+    cgURL: 'https://www.coingecko.com/coins/catwifhat',
+    day: '12',
+    twitterURL: 'https://twitter.com/CatwifHatcoin?t=_PyGOxs3rN1MDkAtANCvog&s=09',
+    customSwap: '',
+    symbol: 'CIF',
+    approved: 23,
+    contactTelegramURL: '@ferrouswroughtnaut',
+    id: 'TMXtx8U2UW29Fagtp9JM'
+  },
+  {
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/dogwifhat/',
+    cgURL: 'https://coingecko.com/coins/dogwifhat',
+    otherURL: '',
+    vote: 0,
+    customSwap: '',
+    approved: 5,
+    symbol: 'WIF',
+    description: 'Popular meme Dogwifhat vibes $wif frens onchain ',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2Fdogwifhat%2Fphoto_2023-12-14_07-12-06.jpg520c5482-ace9-4d82-925b-a31d6aef3fb3?alt=media&token=d2518efd-4c3d-4c8a-83ed-6302ab314b31',
+    nameInput: 'dogwifhat',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    year: '2023',
+    telegramURL: 'https://t.me/dogwifcoin',
+    network: 'Solana (SOL)',
+    day: '20',
+    discordURL: '',
+    twitterURL: 'https://twitter.com/dogwifcoin',
+    month: 'NOVEMBER',
+    websiteURL: 'https://dogwifcoin.org/',
+    contactAddress: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
+    id: 'U8RpoEnrn0yFO48voT7E'
+  },
+  {
+    day: '26',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FSolamander%2Fphoto_2023-12-26_20-18-58.jpg3d0cf3e3-f9a8-44bf-b376-0309cbcb5021?alt=media&token=48bd9617-ba46-47d5-a665-7baa7ad26e31',
+    discordURL: '',
+    contactAddress: 'CUwif1FiX5b3bwwb2n5Bm35AixvnR8LJjGUVmEwNZNgR',
+    cmcURL: '',
+    description: 'Soly aspires to be the official face of Solana, ready to make a lasting impression in the dynamic realm of cryptocurrency.',
+    vote: 0,
+    telegramURL: 'https://t.me/SolyOnSol',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    customChart: '',
+    twitterURL: 'https://x.com/solyonsol',
+    network: 'Solana (SOL)',
+    symbol: 'SOLY',
+    nameInput: 'Solamander',
+    approved: 21,
+    otherURL: '',
+    year: '2023',
+    creatorEmail: 'odegeg9@gmail.com',
+    cgURL: '',
+    month: 'DECEMBER',
+    websiteURL: 'https://solyonsol.com/',
+    customSwap: '',
+    id: 'W9um7pJdR7xvVXNbCDLY'
+  },
+  {
+    otherURL: '',
+    year: '2023',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    cgURL: 'https://coingecko.com/coins/kabosu-3',
+    websiteURL: 'https://solkabosu.com/',
+    twitterURL: 'https://twitter.com/solkabosu',
+    cmcURL: 'https://coinmarketcap.com/currencies/kabosu-sol/',
+    month: 'DECEMBER',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FKabosu%2Fphoto_2023-12-11_23-00-01.jpg2b9ffdf3-5dac-4382-b888-c5fedd3991b2?alt=media&token=1401cac5-39bf-4cc5-a622-6ff48711e807',
+    day: '14',
+    telegramURL: 'https://t.me/solkabosu',
+    contactAddress: '3h4DGQd9k5gsiMnNzDuGXAcjkMm5G7iC3knykdvBBnxU',
+    nameInput: 'Kabosu',
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    discordURL: '',
+    symbol: 'KABOSU',
+    network: 'Solana (SOL)',
+    approved: 4,
+    customSwap: '',
+    vote: 0,
+    description: 'The face of Doge, Kabosu, comes to life on the Solana blockchain.',
+    id: 'XuTaLKYtrYRtaYRqBmI3'
+  },
+  {
+    description: 'Why $Froggy does the project have so much based dev support, We realized we had to do something to surpass bsc and the meme community.',
+    websiteURL: 'https://froggybsc.com/',
+    cgURL: 'https://coingecko.com/en/coins/froggy',
+    creatorEmail: 'odegeg9@gmail.com',
+    discordURL: '',
+    customSwap: '',
+    symbol: 'FROGGY',
+    cmcURL: 'https://coinmarketcap.com/currencies/froggy/',
+    nameInput: 'Froggy',
+    vote: 0,
+    year: '2023',
+    twitterURL: 'https://twitter.com/froggybsc',
+    telegramURL: 'https://t.me/froggyglobal',
+    contactAddress: '0x4c561c1ef2109fc6b230304b114671f72820421b',
+    network: 'Binance Smart Chain (BSC)',
+    approved: 9,
+    customChart: '',
+    day: '23',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FFroggy%2Fphoto_2023-09-23_11-18-57.jpg3f251583-af86-4107-a47b-5b7dabcd4af7?alt=media&token=36d53365-85fc-4744-be41-218a3c018ab6',
+    month: 'SEPTEMBER',
+    otherURL: 'https://froggybsc.gitbook.io/whitepaper/',
+    contactTelegramURL: '@FERROUSwroughtnaut',
+    id: 'agLaOn4QShJ8LXoEovrX'
+  },
+  {
+    description: 'Hi my name is PONKE. \n' +
+      '\n' +
+      'Im a degenerate gambler that doesn’t get along with just anyone but I have a lot of friends. I get angry sometimes but deep down I am a good monkey.',
+    customChart: '',
+    cmcURL: '',
+    contactAddress: '5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC',
+    customSwap: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FPONKE%2Fphoto_2023-12-24_03-31-13.jpg708887a7-9a81-46e8-970e-3e77291b125c?alt=media&token=887e45d5-9bbc-4154-9c92-9ff7f578b245',
+    cgURL: 'https://coingecko.com/en/coins/ponke',
+    approved: 15,
+    twitterURL: 'https://x.com/ponkesol',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    otherURL: '',
+    vote: 0,
+    network: 'Solana (SOL)',
+    day: '24',
+    month: 'DECEMBER',
+    telegramURL: 'https://t.me/ponkesol',
+    discordURL: '',
+    year: '2023',
+    creatorEmail: 'odegeg9@gmail.com',
+    websiteURL: 'https://www.ponke.xyz/',
+    nameInput: 'PONKE',
+    symbol: 'PONKE',
+    id: 'dU1hvSKstUcEmWzgjdV2'
+  },
+  {
+    description: 'First merchandise token on Avax, bridged now on BSC! Husky Avax is a token that was stealth-launched on May 12th, 2021 and runs on the Avalanche C-Chain. It features locked initial liquidity, a hard-capped supply, has no team allocation, and will have no airdrops. Husky benefits immensely by running on Avalanche, where secure and decentralized transactions are fast, cheap, and environmentally friendly.',
+    creatorEmail: 'odegeg9@gmail.com',
+    day: '13',
+    symbol: 'HUSKY',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FHusky%20Avax%2Fphoto_2021-09-10_14-55-56.jpg41342faf-3f55-4474-9b2d-4519b49365ca?alt=media&token=bead5f6a-b7c2-4a0b-95f6-5f3246a223a8',
+    telegramURL: 'https://t.me/Huskyavax',
+    nameInput: 'Husky Avax',
+    twitterURL: 'https://twitter.com/AvaxHusky',
+    discordURL: 'https://discord.gg/KyWBeRSqXg',
+    year: '2023',
+    vote: 0,
+    cmcURL: 'https://coinmarketcap.com/currencies/husky-avax/',
+    otherURL: 'https://reddit.com/r/HuskyAvalanche/',
+    month: 'OCTOBER',
+    customSwap: '',
+    approved: 7,
+    websiteURL: 'https://www.husky.space/',
+    contactAddress: '0x65378b697853568dA9ff8EaB60C13E1Ee9f4a654',
+    customChart: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    network: 'Avalanche (AVAX)',
+    cgURL: 'https://coingecko.com/coins/husky-avax',
+    id: 'sR9jmIwsEP12dBLKpLUF'
+  },
+  {
+    twitterURL: 'https://twitter.com/DaddyBonkSOL',
+    discordURL: '',
+    cmcURL: '',
+    websiteURL: 'https://daddybonk.xyz/',
+    description: 'DaddyBonk is the official Daddy of BONK. We celebrate the father and son story with DaddyBonk 🐶🐕',
+    customSwap: '',
+    telegramURL: 'https://t.me/daddybonksol',
+    otherURL: '',
+    creatorEmail: 'odegeg9@gmail.com',
+    cgURL: '',
+    network: 'Solana (SOL)',
+    vote: 0,
+    year: '2023',
+    customChart: '',
+    month: 'DECEMBER',
+    approved: 22,
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FDADDY%20BONK%2Fphoto_2023-12-29_17-25-30.jpg748b0984-2678-491f-be41-97413efd9146?alt=media&token=195078b2-1280-483d-b434-c4ba3bf1de6d',
+    nameInput: 'DADDY BONK',
+    contactAddress: '6sWet5H2qNpXnV5CwxSmRThx4z3uVtdjHqRB4VyMkJ8Z',
+    day: '29',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    symbol: 'DBONK',
+    id: 'uZC9NMS52C95cdWIfV8G'
+  },
+  {
+    customChart: '',
+    day: '13',
+    network: 'Binance Smart Chain (BSC)',
+    creatorEmail: 'odegeg9@gmail.com',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FGrok%20Girl%2Fphoto_2023-12-14_13-12-37.jpgd486f419-06e5-429b-bf00-14f0397f8a1f?alt=media&token=a68d69a8-cea3-4456-8897-99604e10f437',
+    contactAddress: '0x6d57F5c286E04850c2c085350F2e60aaA7B7c15B',
+    discordURL: '',
+    vote: 0,
+    year: '2023',
+    month: 'DECEMBER',
+    customSwap: '',
+    symbol: 'GrokGirl',
+    description: 'THE CUTEST GROK IS HERE , THE NEXT 1000X GEM',
+    approved: 6,
+    cmcURL: 'https://coinmarketcap.com/currencies/grok-girl/',
+    cgURL: 'https://coingecko.com/coins/grok-girl',
+    telegramURL: 'https://t.me/grok_girl',
+    twitterURL: 'https://twitter.com/Grok_Girl',
+    otherURL: 'https://grok-girl.gitbook.io/girl-grok-whitepaper/',
+    websiteURL: 'https://grok-girl.net/',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    nameInput: 'Grok Girl',
+    id: 'wLjdOe8vJtQME2YcSTEL'
+  }
+]
+
+[info]    Generating static pages (16/33) 
+
+[info]    Generating static pages (24/33) 
+
+[info]  ✓ Generating static pages (33/33) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (pages)                                    Size     First Load JS
+┌ ● / (732 ms)                                   3.22 kB         214 kB
+├   /_app                                        0 B            95.8 kB
+├ ○ /404                                         180 B            96 kB
+├ ○ /about                                       1.65 kB        97.4 kB
+├ ● /all (801 ms)                                2.59 kB         209 kB
+├ λ /api/auth/[...nextauth]                      0 B            95.8 kB
+├ λ /api/auth/signup                             0 B            95.8 kB
+├ ● /coins/[coinId] (ISR: 30 Seconds) (5571 ms)  3.25 kB         214 kB
+├   ├ /coins/0YsK7wJlkHAWHmjRWKeK (736 ms)
+├   ├ /coins/cs2rgBFnZCoA8nV5MkHk (340 ms)
+├   ├ /coins/XuTaLKYtrYRtaYRqBmI3 (306 ms)
+├   ├ /coins/dU1hvSKstUcEmWzgjdV2 (305 ms)
+├   ├ /coins/2F4hJRzwLeiy5pmUWUd5
+├   ├ /coins/3JQjLJzbhBBYGA5DiKQD
+├   ├ /coins/3kL1gqhX7wxxKgah9nGJ
+├   └ [+12 more paths]
+├ ○ /contact                                     913 B          96.7 kB
+├ ○ /forgot (483 ms)                             1.36 kB         237 kB
+├ ○ /forgot/login                                1 kB            208 kB
+├ ○ /join                                        914 B          96.7 kB
+├ ○ /marketing                                   1.37 kB        97.1 kB
+├ ● /new (642 ms)                                2.59 kB         209 kB
+├ ○ /partners                                    812 B          96.6 kB
+├ ○ /signup                                      4.74 kB         130 kB
+└ ○ /submit                                      33.3 kB         260 kB
++ First Load JS shared by all                    112 kB
+  ├ chunks/framework-66d32731bdd20e83.js         45.2 kB
+  ├ chunks/main-bac2f07e2c919777.js              31.8 kB
+  ├ chunks/pages/_app-8b68aee73592ff2e.js        17.8 kB
+  ├ chunks/webpack-36d12a75f0098f30.js           1.05 kB
+  └ css/b68521ff647274b0.css                     16.5 kB
+
+
+[info] ○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+   (ISR)      incremental static regeneration (uses revalidate in getStaticProps)
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • Image Optimization
+[info]  • use of revalidate /coins/[coinId]
+[info]  • non-static route /api/auth/[...nextauth]
+[info]  • non-static route /api/auth/signup
+[info] 
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/0YsK7wJlkHAWHmjRWKeK due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/2F4hJRzwLeiy5pmUWUd5 due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/3JQjLJzbhBBYGA5DiKQD due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/3kL1gqhX7wxxKgah9nGJ due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/6326MYKywzye6U8ex9Bf due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/AAUyreA96f0qlkAj54gk due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/AjVcFIKC123VEE9Kc1XD due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/GaKpTtn8a8QFOkYmW5Vh due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/RnAb27Y2kf2kKbUsActN due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/TMXtx8U2UW29Fagtp9JM due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/U8RpoEnrn0yFO48voT7E due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/W9um7pJdR7xvVXNbCDLY due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/XuTaLKYtrYRtaYRqBmI3 due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/agLaOn4QShJ8LXoEovrX due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/cs2rgBFnZCoA8nV5MkHk due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/dU1hvSKstUcEmWzgjdV2 due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/sR9jmIwsEP12dBLKpLUF due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/uZC9NMS52C95cdWIfV8G due to revalidate
+[debug] [2023-12-30T17:28:43.359Z] skipping /coins/wLjdOe8vJtQME2YcSTEL due to revalidate
+[debug] [2023-12-30T17:28:46.509Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 [none]
+[debug] [2023-12-30T17:28:47.577Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 200
+[debug] [2023-12-30T17:28:47.577Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 {"name":"projects/fresh-token-d3bc1/sites/fresh-token-d3bc1","defaultUrl":"https://fresh-token-d3bc1.web.app","type":"DEFAULT_SITE"}
+[warn] !  This integration expects Node version 16, 18, or 20. You're running version 21, problems may be encountered. 
+[debug] [2023-12-30T17:29:07.160Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at prepareFrameworks (C:\Users\osman\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:372:42)
+    at async deploy (C:\Users\osman\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-30T17:52:40.563Z] ----------------------------------------------------------------------
+[debug] [2023-12-30T17:52:40.566Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\osman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-30T17:52:40.566Z] CLI Version:   13.0.2
+[debug] [2023-12-30T17:52:40.566Z] Platform:      win32
+[debug] [2023-12-30T17:52:40.566Z] Node Version:  v20.10.0
+[debug] [2023-12-30T17:52:40.566Z] Time:          Sat Dec 30 2023 20:52:40 GMT+0300 (GMT+03:00)
+[debug] [2023-12-30T17:52:40.567Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-30T17:52:40.658Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-30T17:52:40.658Z] > authorizing via signed-in user (odegeg9@gmail.com)
+[debug] [2023-12-30T17:52:40.658Z] [iam] checking project fresh-token-d3bc1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-30T17:52:40.660Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions [none]
+[debug] [2023-12-30T17:52:40.660Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions x-goog-quota-user=projects/fresh-token-d3bc1
+[debug] [2023-12-30T17:52:40.660Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-30T17:52:41.719Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions 200
+[debug] [2023-12-30T17:52:41.720Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fresh-token-d3bc1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-30T17:52:41.721Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1 [none]
+[debug] [2023-12-30T17:52:42.110Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1 200
+[debug] [2023-12-30T17:52:42.110Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1 {"projectId":"fresh-token-d3bc1","projectNumber":"1076235205916","displayName":"Fresh Token","name":"projects/fresh-token-d3bc1","resources":{"hostingSite":"fresh-token-d3bc1","storageBucket":"fresh-token-d3bc1.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_ece75157-2273-4e2c-a9b0-cd4d8ea64802"}
+[debug] [2023-12-30T17:52:45.691Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites pageToken=&pageSize=10
+[debug] [2023-12-30T17:52:46.917Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites 200
+[debug] [2023-12-30T17:52:46.917Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites {"sites":[{"name":"projects/fresh-token-d3bc1/sites/fresh-token-d3bc1","defaultUrl":"https://fresh-token-d3bc1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-30T17:52:46.918Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites 
+[debug] [2023-12-30T17:52:47.241Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites 200
+[debug] [2023-12-30T17:52:47.242Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites {"sites":[{"name":"projects/fresh-token-d3bc1/sites/fresh-token-d3bc1","defaultUrl":"https://fresh-token-d3bc1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-30T17:52:47.242Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1/webApps/-/config [none]
+[debug] [2023-12-30T17:52:48.097Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1/webApps/-/config 200
+[debug] [2023-12-30T17:52:48.097Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fresh-token-d3bc1/webApps/-/config {"projectId":"fresh-token-d3bc1","appId":"1:1076235205916:web:b948978d4407ec67fa4ed9","storageBucket":"fresh-token-d3bc1.appspot.com","locationId":"us-central","apiKey":"AIzaSyBKXUc_ebvBVvrI9ctyil6JcnIL17ZVgfw","authDomain":"fresh-token-d3bc1.firebaseapp.com","messagingSenderId":"1076235205916","measurementId":"G-9EKS2B9DQZ"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-30T17:52:54.671Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 [none]
+[debug] [2023-12-30T17:52:55.725Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 200
+[debug] [2023-12-30T17:52:55.725Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 {"name":"projects/fresh-token-d3bc1/sites/fresh-token-d3bc1","defaultUrl":"https://fresh-token-d3bc1.web.app","type":"DEFAULT_SITE"}
+[info]    Linting and checking validity of types ...
+
+[info]  ⨯ ESLint must be installed in order to run during builds: yarn add --dev eslint
+
+[info]    ▲ Next.js 14.0.3
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/33) ...
+
+[info] [
+  {
+    discordURL: '',
+    websiteURL: 'https://frozyinu.com',
+    customChart: 'https://www.dextools.io/app/en/bnb/pair-explorer/0xe7bef5fe2d27b7b36b817e64ad75ec518b1060df',
+    cmcURL: 'https://coinmarketcap.com/tr/currencies/frozy-inu/',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    symbol: 'FRZ',
+    year: '2023',
+    telegramURL: 'https://t.me/frozyinuglobal',
+    nameInput: 'Frozy Inu',
+    contactAddress: '0x242F023402C0A1292dFf73E2aBc96c1c991ef1F3',
+    customSwap: 'https://pancakeswap.finance/swap?outputCurrency=0x242F023402C0A1292dFf73E2aBc96c1c991ef1F3',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/mamiamk%40gmail.com%2FFrozy%20Inu%2Fsnowfox.pngafa973e9-1cf5-4bf1-ae54-1f75bf615e76?alt=media&token=1a5ace21-f262-4a53-8ee3-ad4eda82e7e6',
+    network: 'Binance Smart Chain (BSC)',
+    twitterURL: 'https://twitter.com/frozyinu',
+    description: 'Frozy Inu is different from other meme tokens. The only goal of other meme tokens is to make a profit. But Frozy Inu has two main goals: Make a profit and save the World!',
+    approved: 1,
+    otherURL: 'https://www.youtube.com/@FrozyINU',
+    day: '30',
+    month: 'APRIL',
+    vote: 1,
+    creatorEmail: 'mamiamk@gmail.com',
+    id: 'cs2rgBFnZCoA8nV5MkHk'
+  },
+  {
+    day: '20',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FanaloS%2Fphoto_2023-12-16_21-39-29%20(2).jpge13702c8-6fbd-4920-810e-a2c3a4e37629?alt=media&token=8fd20b1d-ae08-4526-98da-7b5d183e586c',
+    cgURL: 'https://coingecko.com/coins/analos',
+    creatorEmail: 'odegeg9@gmail.com',
+    description: "GRAB YOUR $ANALOS AND MOONWALK TO THE MOON – IT'S THE ONLY WAY TO GO FORWARD",
+    contactAddress: '7iT1GRYYhEop2nV1dyCwK2MGyLmPHq47WhPGSwiqcUg5',
+    contactTelegramURL: 'VG',
+    nameInput: 'analoS',
+    month: 'DECEMBER',
+    vote: 0,
+    discordURL: '',
+    twitterURL: 'https://twitter.com/analos_coin_',
+    telegramURL: 'https://t.me/analos_coin',
+    year: '2023',
+    customSwap: '',
+    network: 'Solana (SOL)',
+    approved: 16,
+    cmcURL: 'https://coinmarketcap.com/currencies/analos/',
+    otherURL: 'https://solscan.io/token/7iT1GRYYhEop2nV1dyCwK2MGyLmPHq47WhPGSwiqcUg5',
+    customChart: '',
+    symbol: 'ANALOS',
+    websiteURL: 'https://www.analos.meme/',
+    id: '0YsK7wJlkHAWHmjRWKeK'
+  },
+  {
+    cmcURL: 'https://coinmarketcap.com/currencies/popcat/',
+    symbol: 'POPCAT',
+    twitterURL: 'https://twitter.com/Popcatsol',
+    vote: 0,
+    discordURL: '',
+    creatorEmail: 'odegeg9@gmail.com',
+    approved: 10,
+    description: "Let me guess, you missed $BONK on sol and now you're down bad trying to find the next 1000x play?\n" +
+      "Dead wallets, pump and dumps, rug pulls... The market can seem lifeless at times. Buy fear not, we've been there before.\n" +
+      "Now it's time to save the market, and don't miss $POPCAT",
+    telegramURL: 'https://t.me/popcatsol',
+    websiteURL: 'https://popcatsol.com/',
+    day: '12',
+    cgURL: 'https://coingecko.com/coins/popcat',
+    month: 'DECEMBER',
+    customSwap: '',
+    network: 'Solana (SOL)',
+    customChart: '',
+    contactAddress: '7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    year: '2023',
+    otherURL: '',
+    nameInput: 'Popcat',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FPopcat%2Fphoto_2023-12-13_22-18-46.jpgb85081eb-72b7-4488-a4bd-d79c1e25064f?alt=media&token=7252454e-cb19-4bc4-aa70-632f857bfd33',
+    id: '2F4hJRzwLeiy5pmUWUd5'
+  },
+  {
+    symbol: 'VINU',
+    creatorEmail: 'odegeg9@gmail.com',
+    websiteURL: 'https://vitainu.org/',
+    vote: 0,
+    cgURL: 'https://coingecko.com/coins/vita-inu',
+    month: 'JUNE',
+    year: '2022',
+    customChart: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/vita-inu/',
+    telegramURL: 'https://t.me/VitaInu',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    approved: 2,
+    description: 'Vita Inu (VINU) is the governance token of the VINU Ecosystem and is native token the Vite DAG chain. VINU is the world’s first fast, feeless (and cheeky) dog-themed coin with high TPS and smart contracts.',
+    otherURL: 'https://vita-inu.gitbook.io/whitepaper/',
+    nameInput: 'Vita Inu',
+    customSwap: '',
+    contactAddress: '0xAFCdd4f666c84Fed1d8BD825aA762e3714F652c9',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FVita%20Inu%2Fphoto_2021-11-30_11-49-50.jpgdf0571b0-768a-4685-93ee-59bce54f874f?alt=media&token=d3c1a4b3-79e4-4969-ae99-a29776966b32',
+    day: '23',
+    network: 'Ethereum (ETH)',
+    discordURL: 'https://discord.com/invite/m7JxNcSt7e',
+    twitterURL: 'https://twitter.com/VitaInuCoin',
+    id: '3JQjLJzbhBBYGA5DiKQD'
+  },
+  {
+    contactAddress: '0xd08b9e557d1f64c8dd50a168453ea302a83e47fc',
+    cgURL: 'https://coingecko.com/coins/grok-inu',
+    twitterURL: 'https://twitter.com/RealgrokinuBSC',
+    symbol: 'GROKINU',
+    month: 'DECEMBER',
+    day: '13',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    customSwap: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FGrok%20Inu%2Fphoto_2023-12-09_06-16-36.jpgf16b6320-a0c1-4476-9e5f-4b7ee8817af9?alt=media&token=6a5960b5-6bae-4e56-b4a6-196f99a134ef',
+    description: 'Bonk inu + Grok = Grok inu The last inu 2023 is GROKINU',
+    year: '2023',
+    cmcURL: 'https://coinmarketcap.com/currencies/grok-inu/',
+    discordURL: '',
+    telegramURL: 'https://t.me/grokinu_portal',
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    network: 'Binance Smart Chain (BSC)',
+    approved: 8,
+    websiteURL: 'https://grokinucoin.vip/',
+    vote: 0,
+    nameInput: 'Grok Inu',
+    otherURL: 'https://grokinucoin.gitbook.io/whitepaper/',
+    id: '3kL1gqhX7wxxKgah9nGJ'
+  },
+  {
+    symbol: 'BONKA',
+    telegramURL: 'https://t.me/bonkainu',
+    network: 'Solana (SOL)',
+    year: '2023',
+    otherURL: '',
+    creatorEmail: 'odegeg9@gmail.com',
+    description: 'The cute girlfriend of Bonk',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    nameInput: 'Bonka',
+    discordURL: '',
+    contactAddress: 'JA5KRHnXv2fuPjQoGwCBw2RXKsbiWMDJ9adPqpZUMDzV',
+    customSwap: '',
+    approved: 11,
+    month: 'DECEMBER',
+    twitterURL: 'https://twitter.com/bonkainu',
+    vote: 0,
+    websiteURL: 'https://www.bonkainu.xyz/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FBonka%2Fphoto_2023-12-16_20-36-28.jpgc30a6bf8-0c12-4878-b348-c6c515612a03?alt=media&token=53b00311-b04f-4c7f-acc8-c85417de2dd7',
+    day: '16',
+    customChart: '',
+    id: '6326MYKywzye6U8ex9Bf'
+  },
+  {
+    otherURL: '',
+    twitterURL: 'https://twitter.com/adakovenko',
+    contactAddress: 'E4Q5pLaEiejwEQHcM9GeYSQfMyGy8DJ4bPWgeYthn24v',
+    telegramURL: 'https://t.me/Ada_Solana',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    creatorEmail: 'odegeg9@gmail.com',
+    month: 'DECEMBER',
+    cgURL: '',
+    symbol: 'ADA',
+    day: '15',
+    customChart: '',
+    network: 'Solana (SOL)',
+    discordURL: '',
+    customSwap: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/ada/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FAda%2Fphoto_2023-12-15_02-24-06.jpgae49bed1-1d32-477a-9763-50ea9e92f9a4?alt=media&token=cd17cbae-429f-444a-9550-eec0bf610e21',
+    year: '2023',
+    websiteURL: 'https://adaonsol.com/',
+    approved: 17,
+    vote: 0,
+    description: 'Ada is the beloved dog of Anatoly Yakovenko, the Founder and CEO of Solana.',
+    nameInput: 'Ada',
+    id: 'AAUyreA96f0qlkAj54gk'
+  },
+  {
+    symbol: 'SOLTAMA',
+    cgURL: '',
+    cmcURL: '',
+    websiteURL: 'http://soltama.space/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FSaitama%2Fphoto_2023-12-29_03-33-57.jpg8636b9ff-007c-4715-88fe-171f23791b96?alt=media&token=ae9aaeec-a190-4fa8-bdb3-07a835e18fb2',
+    customSwap: '',
+    customChart: '',
+    nameInput: 'Saitama',
+    telegramURL: 'https://t.me/SaitamaOfficialSOL',
+    network: 'Solana (SOL)',
+    discordURL: '',
+    day: '28',
+    contactAddress: 'BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz',
+    description: 'Exciting news! Introducing SOLTAMA, the cryptocurrency ready to take you on a journey full of adventures! 💎',
+    creatorEmail: 'odegeg9@gmail.com',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    year: '2023',
+    twitterURL: 'https://x.com/SoltamaSolana',
+    month: 'DECEMBER',
+    vote: 0,
+    approved: 18,
+    otherURL: '',
+    id: 'AjVcFIKC123VEE9Kc1XD'
+  },
+  {
+    cmcURL: 'https://coinmarketcap.com/currencies/coq-inu/',
+    year: '2023',
+    telegramURL: 'https://t.me/CoqInuAvax',
+    creatorEmail: 'odegeg9@gmail.com',
+    vote: 0,
+    cgURL: 'https://coingecko.com/en/coins/coq-inu',
+    month: 'DECEMBER',
+    nameInput: 'Coq Inu',
+    contactAddress: '0x420fca0121dc28039145009570975747295f2329',
+    websiteURL: 'https://www.coqinu.com/',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    customSwap: '',
+    approved: 24,
+    network: 'Avalanche (AVAX)',
+    customChart: '',
+    description: 'We are the #1 meme coin on AVAX. Founded by well respected members of the community. They took no distribution and put the entire supply of the coin with 150 avax in initial liquidity. The contract has been fully renounced and liquidity burned.',
+    otherURL: '',
+    discordURL: 'https://discord.gg/5Nde2b9B3m',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FCoq%20Inu%2Fphoto_2023-12-07_20-46-59.jpgae6b14ce-582b-4d47-8940-fec3af1d1a18?alt=media&token=eaaf1b80-6632-48fc-a50e-4b020a610cc5',
+    twitterURL: 'https://twitter.com/CoqInuAvax',
+    symbol: 'COQ',
+    day: '7',
+    id: 'GaKpTtn8a8QFOkYmW5Vh'
+  },
+  {
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    approved: 19,
+    symbol: 'BLOCK',
+    customChart: '',
+    contactAddress: '2zwuFv4tzMrJMA3Gq5nNH3i4ojWPtCkjmGzTMXe4RpMc',
+    month: 'DECEMBER',
+    description: 'SOLANA FOUNDER WANNA LAUNCH $BLOCK\n' +
+      'SO WE ARE HERE WITH $BLOCK (meme coin)\n' +
+      'LET’S TAKE IT TO MULTI MILLIONS $BLOCK BY $BLOCK',
+    cmcURL: '',
+    telegramURL: 'https://t.me/Block_SOL',
+    websiteURL: 'https://www.blocksol.vip/',
+    creatorEmail: 'odegeg9@gmail.com',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FBlock%2Fphoto_2023-12-25_13-30-18.jpg084c0cf1-66e3-4885-97b1-568caf2bf31b?alt=media&token=fb10ee38-ae67-46bf-8e28-2e89fdfd4c9e',
+    cgURL: '',
+    nameInput: 'Block',
+    twitterURL: 'https://x.com/blockonsol?t=UEjvERWjT1NVYU8tEyIHzQ&s=09',
+    year: '2023',
+    otherURL: '',
+    vote: 0,
+    network: 'Solana (SOL)',
+    customSwap: '',
+    discordURL: '',
+    day: '24',
+    id: 'RnAb27Y2kf2kKbUsActN'
+  },
+  {
+    customChart: '',
+    year: '2023',
+    customSwap: '',
+    month: 'DECEMBER',
+    day: '12',
+    nameInput: 'CATWIFHAT',
+    cgURL: 'https://www.coingecko.com/coins/catwifhat',
+    description: 'really just a cat wif a hat',
+    contactAddress: 'G3vWvAaXPHCnncnyAbq6yBRXqfRtEV3h7vExzasZeT6g',
+    websiteURL: 'https://catwifhatcoin.com/',
+    discordURL: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    vote: 0,
+    creatorEmail: 'odegeg9@gmail.com',
+    approved: 23,
+    network: 'Solana (SOL)',
+    telegramURL: 'https://t.me/CatWifHatSol',
+    twitterURL: 'https://twitter.com/CatwifHatcoin?t=_PyGOxs3rN1MDkAtANCvog&s=09',
+    symbol: 'CIF',
+    otherURL: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/catwifhat/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FCATWIFHAT%2Fphoto_2023-12-28_12-30-13.jpg4e69fdcb-c8da-40e2-bf03-4f2d6721e1ab?alt=media&token=744928c1-08c8-45be-9e30-3fd9343b87c9',
+    id: 'TMXtx8U2UW29Fagtp9JM'
+  },
+  {
+    websiteURL: 'https://dogwifcoin.org/',
+    twitterURL: 'https://twitter.com/dogwifcoin',
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    cgURL: 'https://coingecko.com/coins/dogwifhat',
+    discordURL: '',
+    nameInput: 'dogwifhat',
+    customSwap: '',
+    symbol: 'WIF',
+    network: 'Solana (SOL)',
+    contactAddress: 'EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm',
+    vote: 0,
+    otherURL: '',
+    approved: 5,
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2Fdogwifhat%2Fphoto_2023-12-14_07-12-06.jpg520c5482-ace9-4d82-925b-a31d6aef3fb3?alt=media&token=d2518efd-4c3d-4c8a-83ed-6302ab314b31',
+    day: '20',
+    month: 'NOVEMBER',
+    cmcURL: 'https://coinmarketcap.com/currencies/dogwifhat/',
+    telegramURL: 'https://t.me/dogwifcoin',
+    year: '2023',
+    description: 'Popular meme Dogwifhat vibes $wif frens onchain ',
+    id: 'U8RpoEnrn0yFO48voT7E'
+  },
+  {
+    creatorEmail: 'odegeg9@gmail.com',
+    symbol: 'SOLY',
+    approved: 21,
+    year: '2023',
+    network: 'Solana (SOL)',
+    otherURL: '',
+    month: 'DECEMBER',
+    customSwap: '',
+    nameInput: 'Solamander',
+    vote: 0,
+    twitterURL: 'https://x.com/solyonsol',
+    cmcURL: '',
+    day: '26',
+    customChart: '',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    telegramURL: 'https://t.me/SolyOnSol',
+    contactAddress: 'CUwif1FiX5b3bwwb2n5Bm35AixvnR8LJjGUVmEwNZNgR',
+    discordURL: '',
+    cgURL: '',
+    websiteURL: 'https://solyonsol.com/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FSolamander%2Fphoto_2023-12-26_20-18-58.jpg3d0cf3e3-f9a8-44bf-b376-0309cbcb5021?alt=media&token=48bd9617-ba46-47d5-a665-7baa7ad26e31',
+    description: 'Soly aspires to be the official face of Solana, ready to make a lasting impression in the dynamic realm of cryptocurrency.',
+    id: 'W9um7pJdR7xvVXNbCDLY'
+  },
+  {
+    year: '2023',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FKabosu%2Fphoto_2023-12-11_23-00-01.jpg2b9ffdf3-5dac-4382-b888-c5fedd3991b2?alt=media&token=1401cac5-39bf-4cc5-a622-6ff48711e807',
+    cmcURL: 'https://coinmarketcap.com/currencies/kabosu-sol/',
+    nameInput: 'Kabosu',
+    creatorEmail: 'odegeg9@gmail.com',
+    telegramURL: 'https://t.me/solkabosu',
+    twitterURL: 'https://twitter.com/solkabosu',
+    customChart: '',
+    vote: 0,
+    websiteURL: 'https://solkabosu.com/',
+    day: '14',
+    customSwap: '',
+    network: 'Solana (SOL)',
+    month: 'DECEMBER',
+    symbol: 'KABOSU',
+    otherURL: '',
+    cgURL: 'https://coingecko.com/coins/kabosu-3',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    discordURL: '',
+    description: 'The face of Doge, Kabosu, comes to life on the Solana blockchain.',
+    approved: 4,
+    contactAddress: '3h4DGQd9k5gsiMnNzDuGXAcjkMm5G7iC3knykdvBBnxU',
+    id: 'XuTaLKYtrYRtaYRqBmI3'
+  },
+  {
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FFroggy%2Fphoto_2023-09-23_11-18-57.jpg3f251583-af86-4107-a47b-5b7dabcd4af7?alt=media&token=36d53365-85fc-4744-be41-218a3c018ab6',
+    month: 'SEPTEMBER',
+    cgURL: 'https://coingecko.com/en/coins/froggy',
+    vote: 0,
+    contactTelegramURL: '@FERROUSwroughtnaut',
+    twitterURL: 'https://twitter.com/froggybsc',
+    otherURL: 'https://froggybsc.gitbook.io/whitepaper/',
+    approved: 9,
+    contactAddress: '0x4c561c1ef2109fc6b230304b114671f72820421b',
+    creatorEmail: 'odegeg9@gmail.com',
+    description: 'Why $Froggy does the project have so much based dev support, We realized we had to do something to surpass bsc and the meme community.',
+    customSwap: '',
+    network: 'Binance Smart Chain (BSC)',
+    telegramURL: 'https://t.me/froggyglobal',
+    websiteURL: 'https://froggybsc.com/',
+    customChart: '',
+    discordURL: '',
+    year: '2023',
+    symbol: 'FROGGY',
+    day: '23',
+    cmcURL: 'https://coinmarketcap.com/currencies/froggy/',
+    nameInput: 'Froggy',
+    id: 'agLaOn4QShJ8LXoEovrX'
+  },
+  {
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    telegramURL: 'https://t.me/ponkesol',
+    contactAddress: '5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC',
+    symbol: 'PONKE',
+    discordURL: '',
+    customSwap: '',
+    cgURL: 'https://coingecko.com/en/coins/ponke',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    description: 'Hi my name is PONKE. \n' +
+      '\n' +
+      'Im a degenerate gambler that doesn’t get along with just anyone but I have a lot of friends. I get angry sometimes but deep down I am a good monkey.',
+    year: '2023',
+    month: 'DECEMBER',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FPONKE%2Fphoto_2023-12-24_03-31-13.jpg708887a7-9a81-46e8-970e-3e77291b125c?alt=media&token=887e45d5-9bbc-4154-9c92-9ff7f578b245',
+    network: 'Solana (SOL)',
+    nameInput: 'PONKE',
+    approved: 15,
+    twitterURL: 'https://x.com/ponkesol',
+    vote: 0,
+    cmcURL: '',
+    websiteURL: 'https://www.ponke.xyz/',
+    otherURL: '',
+    day: '24',
+    id: 'dU1hvSKstUcEmWzgjdV2'
+  },
+  {
+    otherURL: 'https://reddit.com/r/HuskyAvalanche/',
+    creatorEmail: 'odegeg9@gmail.com',
+    nameInput: 'Husky Avax',
+    year: '2023',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    day: '13',
+    customSwap: '',
+    vote: 0,
+    month: 'OCTOBER',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FHusky%20Avax%2Fphoto_2021-09-10_14-55-56.jpg41342faf-3f55-4474-9b2d-4519b49365ca?alt=media&token=bead5f6a-b7c2-4a0b-95f6-5f3246a223a8',
+    websiteURL: 'https://www.husky.space/',
+    contactAddress: '0x65378b697853568dA9ff8EaB60C13E1Ee9f4a654',
+    description: 'First merchandise token on Avax, bridged now on BSC! Husky Avax is a token that was stealth-launched on May 12th, 2021 and runs on the Avalanche C-Chain. It features locked initial liquidity, a hard-capped supply, has no team allocation, and will have no airdrops. Husky benefits immensely by running on Avalanche, where secure and decentralized transactions are fast, cheap, and environmentally friendly.',
+    symbol: 'HUSKY',
+    discordURL: 'https://discord.gg/KyWBeRSqXg',
+    twitterURL: 'https://twitter.com/AvaxHusky',
+    network: 'Avalanche (AVAX)',
+    cgURL: 'https://coingecko.com/coins/husky-avax',
+    telegramURL: 'https://t.me/Huskyavax',
+    customChart: '',
+    approved: 7,
+    cmcURL: 'https://coinmarketcap.com/currencies/husky-avax/',
+    id: 'sR9jmIwsEP12dBLKpLUF'
+  },
+  {
+    websiteURL: 'https://daddybonk.xyz/',
+    description: 'DaddyBonk is the official Daddy of BONK. We celebrate the father and son story with DaddyBonk 🐶🐕',
+    telegramURL: 'https://t.me/daddybonksol',
+    contactAddress: '6sWet5H2qNpXnV5CwxSmRThx4z3uVtdjHqRB4VyMkJ8Z',
+    symbol: 'DBONK',
+    creatorEmail: 'odegeg9@gmail.com',
+    approved: 22,
+    month: 'DECEMBER',
+    nameInput: 'DADDY BONK',
+    discordURL: '',
+    twitterURL: 'https://twitter.com/DaddyBonkSOL',
+    otherURL: '',
+    year: '2023',
+    customSwap: '',
+    customChart: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    cgURL: '',
+    cmcURL: '',
+    network: 'Solana (SOL)',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FDADDY%20BONK%2Fphoto_2023-12-29_17-25-30.jpg748b0984-2678-491f-be41-97413efd9146?alt=media&token=195078b2-1280-483d-b434-c4ba3bf1de6d',
+    vote: 0,
+    day: '29',
+    id: 'uZC9NMS52C95cdWIfV8G'
+  },
+  {
+    discordURL: '',
+    twitterURL: 'https://twitter.com/Grok_Girl',
+    cgURL: 'https://coingecko.com/coins/grok-girl',
+    customSwap: '',
+    cmcURL: 'https://coinmarketcap.com/currencies/grok-girl/',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    symbol: 'GrokGirl',
+    approved: 6,
+    year: '2023',
+    contactAddress: '0x6d57F5c286E04850c2c085350F2e60aaA7B7c15B',
+    telegramURL: 'https://t.me/grok_girl',
+    day: '13',
+    vote: 0,
+    month: 'DECEMBER',
+    nameInput: 'Grok Girl',
+    creatorEmail: 'odegeg9@gmail.com',
+    websiteURL: 'https://grok-girl.net/',
+    otherURL: 'https://grok-girl.gitbook.io/girl-grok-whitepaper/',
+    network: 'Binance Smart Chain (BSC)',
+    description: 'THE CUTEST GROK IS HERE , THE NEXT 1000X GEM',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FGrok%20Girl%2Fphoto_2023-12-14_13-12-37.jpgd486f419-06e5-429b-bf00-14f0397f8a1f?alt=media&token=a68d69a8-cea3-4456-8897-99604e10f437',
+    customChart: '',
+    id: 'wLjdOe8vJtQME2YcSTEL'
+  }
+]
+
+[info]    Generating static pages (8/33) 
+
+[info] [
+  {
+    twitterURL: 'https://twitter.com/CoqInuAvax',
+    vote: 0,
+    telegramURL: 'https://t.me/CoqInuAvax',
+    nameInput: 'Coq Inu',
+    otherURL: '',
+    year: '2023',
+    cgURL: 'https://coingecko.com/en/coins/coq-inu',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    contactAddress: '0x420fca0121dc28039145009570975747295f2329',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FCoq%20Inu%2Fphoto_2023-12-07_20-46-59.jpgae6b14ce-582b-4d47-8940-fec3af1d1a18?alt=media&token=eaaf1b80-6632-48fc-a50e-4b020a610cc5',
+    creatorEmail: 'odegeg9@gmail.com',
+    description: 'We are the #1 meme coin on AVAX. Founded by well respected members of the community. They took no distribution and put the entire supply of the coin with 150 avax in initial liquidity. The contract has been fully renounced and liquidity burned.',
+    network: 'Avalanche (AVAX)',
+    discordURL: 'https://discord.gg/5Nde2b9B3m',
+    cmcURL: 'https://coinmarketcap.com/currencies/coq-inu/',
+    websiteURL: 'https://www.coqinu.com/',
+    symbol: 'COQ',
+    customSwap: '',
+    day: '7',
+    approved: 24,
+    month: 'DECEMBER',
+    customChart: '',
+    id: 'GaKpTtn8a8QFOkYmW5Vh'
+  },
+  {
+    cgURL: 'https://www.coingecko.com/coins/catwifhat',
+    month: 'DECEMBER',
+    customChart: '',
+    nameInput: 'CATWIFHAT',
+    telegramURL: 'https://t.me/CatWifHatSol',
+    year: '2023',
+    creatorEmail: 'odegeg9@gmail.com',
+    customSwap: '',
+    symbol: 'CIF',
+    approved: 23,
+    description: 'really just a cat wif a hat',
+    cmcURL: 'https://coinmarketcap.com/currencies/catwifhat/',
+    discordURL: '',
+    contactAddress: 'G3vWvAaXPHCnncnyAbq6yBRXqfRtEV3h7vExzasZeT6g',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    day: '12',
+    network: 'Solana (SOL)',
+    websiteURL: 'https://catwifhatcoin.com/',
+    twitterURL: 'https://twitter.com/CatwifHatcoin?t=_PyGOxs3rN1MDkAtANCvog&s=09',
+    otherURL: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FCATWIFHAT%2Fphoto_2023-12-28_12-30-13.jpg4e69fdcb-c8da-40e2-bf03-4f2d6721e1ab?alt=media&token=744928c1-08c8-45be-9e30-3fd9343b87c9',
+    vote: 0,
+    id: 'TMXtx8U2UW29Fagtp9JM'
+  },
+  {
+    contactAddress: '6sWet5H2qNpXnV5CwxSmRThx4z3uVtdjHqRB4VyMkJ8Z',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FDADDY%20BONK%2Fphoto_2023-12-29_17-25-30.jpg748b0984-2678-491f-be41-97413efd9146?alt=media&token=195078b2-1280-483d-b434-c4ba3bf1de6d',
+    year: '2023',
+    description: 'DaddyBonk is the official Daddy of BONK. We celebrate the father and son story with DaddyBonk 🐶🐕',
+    otherURL: '',
+    symbol: 'DBONK',
+    creatorEmail: 'odegeg9@gmail.com',
+    telegramURL: 'https://t.me/daddybonksol',
+    cgURL: '',
+    websiteURL: 'https://daddybonk.xyz/',
+    day: '29',
+    twitterURL: 'https://twitter.com/DaddyBonkSOL',
+    cmcURL: '',
+    month: 'DECEMBER',
+    approved: 22,
+    customSwap: '',
+    discordURL: '',
+    customChart: '',
+    nameInput: 'DADDY BONK',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    vote: 0,
+    network: 'Solana (SOL)',
+    id: 'uZC9NMS52C95cdWIfV8G'
+  },
+  {
+    cmcURL: '',
+    customSwap: '',
+    nameInput: 'Solamander',
+    month: 'DECEMBER',
+    day: '26',
+    vote: 0,
+    symbol: 'SOLY',
+    network: 'Solana (SOL)',
+    websiteURL: 'https://solyonsol.com/',
+    twitterURL: 'https://x.com/solyonsol',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FSolamander%2Fphoto_2023-12-26_20-18-58.jpg3d0cf3e3-f9a8-44bf-b376-0309cbcb5021?alt=media&token=48bd9617-ba46-47d5-a665-7baa7ad26e31',
+    creatorEmail: 'odegeg9@gmail.com',
+    discordURL: '',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    cgURL: '',
+    contactAddress: 'CUwif1FiX5b3bwwb2n5Bm35AixvnR8LJjGUVmEwNZNgR',
+    year: '2023',
+    approved: 21,
+    otherURL: '',
+    telegramURL: 'https://t.me/SolyOnSol',
+    customChart: '',
+    description: 'Soly aspires to be the official face of Solana, ready to make a lasting impression in the dynamic realm of cryptocurrency.',
+    id: 'W9um7pJdR7xvVXNbCDLY'
+  },
+  {
+    twitterURL: 'https://x.com/blockonsol?t=UEjvERWjT1NVYU8tEyIHzQ&s=09',
+    discordURL: '',
+    vote: 0,
+    year: '2023',
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    symbol: 'BLOCK',
+    approved: 19,
+    contactAddress: '2zwuFv4tzMrJMA3Gq5nNH3i4ojWPtCkjmGzTMXe4RpMc',
+    telegramURL: 'https://t.me/Block_SOL',
+    description: 'SOLANA FOUNDER WANNA LAUNCH $BLOCK\n' +
+      'SO WE ARE HERE WITH $BLOCK (meme coin)\n' +
+      'LET’S TAKE IT TO MULTI MILLIONS $BLOCK BY $BLOCK',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    nameInput: 'Block',
+    month: 'DECEMBER',
+    websiteURL: 'https://www.blocksol.vip/',
+    otherURL: '',
+    network: 'Solana (SOL)',
+    customSwap: '',
+    day: '24',
+    cgURL: '',
+    cmcURL: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FBlock%2Fphoto_2023-12-25_13-30-18.jpg084c0cf1-66e3-4885-97b1-568caf2bf31b?alt=media&token=fb10ee38-ae67-46bf-8e28-2e89fdfd4c9e',
+    id: 'RnAb27Y2kf2kKbUsActN'
+  },
+  {
+    customChart: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FSaitama%2Fphoto_2023-12-29_03-33-57.jpg8636b9ff-007c-4715-88fe-171f23791b96?alt=media&token=ae9aaeec-a190-4fa8-bdb3-07a835e18fb2',
+    discordURL: '',
+    vote: 0,
+    contactAddress: 'BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz',
+    description: 'Exciting news! Introducing SOLTAMA, the cryptocurrency ready to take you on a journey full of adventures! 💎',
+    network: 'Solana (SOL)',
+    websiteURL: 'http://soltama.space/',
+    cgURL: '',
+    symbol: 'SOLTAMA',
+    approved: 18,
+    twitterURL: 'https://x.com/SoltamaSolana',
+    year: '2023',
+    day: '28',
+    otherURL: '',
+    nameInput: 'Saitama',
+    creatorEmail: 'odegeg9@gmail.com',
+    cmcURL: '',
+    month: 'DECEMBER',
+    customSwap: '',
+    telegramURL: 'https://t.me/SaitamaOfficialSOL',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    id: 'AjVcFIKC123VEE9Kc1XD'
+  },
+  {
+    nameInput: 'Ada',
+    twitterURL: 'https://twitter.com/adakovenko',
+    approved: 17,
+    telegramURL: 'https://t.me/Ada_Solana',
+    cmcURL: 'https://coinmarketcap.com/currencies/ada/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FAda%2Fphoto_2023-12-15_02-24-06.jpgae49bed1-1d32-477a-9763-50ea9e92f9a4?alt=media&token=cd17cbae-429f-444a-9550-eec0bf610e21',
+    contactAddress: 'E4Q5pLaEiejwEQHcM9GeYSQfMyGy8DJ4bPWgeYthn24v',
+    symbol: 'ADA',
+    contactTelegramURL: '@FERROUSWROUGHTNAUT',
+    day: '15',
+    websiteURL: 'https://adaonsol.com/',
+    year: '2023',
+    cgURL: '',
+    vote: 0,
+    creatorEmail: 'odegeg9@gmail.com',
+    customChart: '',
+    network: 'Solana (SOL)',
+    description: 'Ada is the beloved dog of Anatoly Yakovenko, the Founder and CEO of Solana.',
+    otherURL: '',
+    month: 'DECEMBER',
+    discordURL: '',
+    customSwap: '',
+    id: 'AAUyreA96f0qlkAj54gk'
+  },
+  {
+    customSwap: '',
+    telegramURL: 'https://t.me/analos_coin',
+    discordURL: '',
+    symbol: 'ANALOS',
+    network: 'Solana (SOL)',
+    otherURL: 'https://solscan.io/token/7iT1GRYYhEop2nV1dyCwK2MGyLmPHq47WhPGSwiqcUg5',
+    month: 'DECEMBER',
+    websiteURL: 'https://www.analos.meme/',
+    cmcURL: 'https://coinmarketcap.com/currencies/analos/',
+    contactAddress: '7iT1GRYYhEop2nV1dyCwK2MGyLmPHq47WhPGSwiqcUg5',
+    vote: 0,
+    description: "GRAB YOUR $ANALOS AND MOONWALK TO THE MOON – IT'S THE ONLY WAY TO GO FORWARD",
+    customChart: '',
+    creatorEmail: 'odegeg9@gmail.com',
+    twitterURL: 'https://twitter.com/analos_coin_',
+    nameInput: 'analoS',
+    cgURL: 'https://coingecko.com/coins/analos',
+    contactTelegramURL: 'VG',
+    approved: 16,
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FanaloS%2Fphoto_2023-12-16_21-39-29%20(2).jpge13702c8-6fbd-4920-810e-a2c3a4e37629?alt=media&token=8fd20b1d-ae08-4526-98da-7b5d183e586c',
+    year: '2023',
+    day: '20',
+    id: '0YsK7wJlkHAWHmjRWKeK'
+  },
+  {
+    creatorEmail: 'odegeg9@gmail.com',
+    telegramURL: 'https://t.me/ponkesol',
+    network: 'Solana (SOL)',
+    year: '2023',
+    customChart: '',
+    otherURL: '',
+    customSwap: '',
+    cgURL: 'https://coingecko.com/en/coins/ponke',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    cmcURL: '',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FPONKE%2Fphoto_2023-12-24_03-31-13.jpg708887a7-9a81-46e8-970e-3e77291b125c?alt=media&token=887e45d5-9bbc-4154-9c92-9ff7f578b245',
+    twitterURL: 'https://x.com/ponkesol',
+    description: 'Hi my name is PONKE. \n' +
+      '\n' +
+      'Im a degenerate gambler that doesn’t get along with just anyone but I have a lot of friends. I get angry sometimes but deep down I am a good monkey.',
+    month: 'DECEMBER',
+    symbol: 'PONKE',
+    websiteURL: 'https://www.ponke.xyz/',
+    discordURL: '',
+    contactAddress: '5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC',
+    day: '24',
+    vote: 0,
+    nameInput: 'PONKE',
+    approved: 15,
+    id: 'dU1hvSKstUcEmWzgjdV2'
+  },
+  {
+    symbol: 'BONKA',
+    url: 'https://firebasestorage.googleapis.com/v0/b/fresh-token-d3bc1.appspot.com/o/odegeg9%40gmail.com%2FBonka%2Fphoto_2023-12-16_20-36-28.jpgc30a6bf8-0c12-4878-b348-c6c515612a03?alt=media&token=53b00311-b04f-4c7f-acc8-c85417de2dd7',
+    description: 'The cute girlfriend of Bonk',
+    network: 'Solana (SOL)',
+    day: '16',
+    discordURL: '',
+    contactAddress: 'JA5KRHnXv2fuPjQoGwCBw2RXKsbiWMDJ9adPqpZUMDzV',
+    websiteURL: 'https://www.bonkainu.xyz/',
+    creatorEmail: 'odegeg9@gmail.com',
+    customSwap: '',
+    contactTelegramURL: '@ferrouswroughtnaut',
+    nameInput: 'Bonka',
+    customChart: '',
+    year: '2023',
+    month: 'DECEMBER',
+    otherURL: '',
+    twitterURL: 'https://twitter.com/bonkainu',
+    telegramURL: 'https://t.me/bonkainu',
+    approved: 11,
+    vote: 0,
+    id: '6326MYKywzye6U8ex9Bf'
+  }
+]
+
+[info]    Generating static pages (16/33) 
+
+[info]    Generating static pages (24/33) 
+
+[info]  ✓ Generating static pages (33/33) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (pages)                                    Size     First Load JS
+┌ ● / (862 ms)                                   3.22 kB         214 kB
+├   /_app                                        0 B            95.8 kB
+├ ○ /404                                         180 B            96 kB
+├ ○ /about                                       1.65 kB        97.4 kB
+├ ● /all (638 ms)                                2.59 kB         209 kB
+├ λ /api/auth/[...nextauth]                      0 B            95.8 kB
+├ λ /api/auth/signup                             0 B            95.8 kB
+├ ● /coins/[coinId] (ISR: 30 Seconds) (5401 ms)  3.25 kB         214 kB
+├   ├ /coins/agLaOn4QShJ8LXoEovrX (669 ms)
+├   ├ /coins/0YsK7wJlkHAWHmjRWKeK
+├   ├ /coins/2F4hJRzwLeiy5pmUWUd5
+├   ├ /coins/3JQjLJzbhBBYGA5DiKQD
+├   ├ /coins/3kL1gqhX7wxxKgah9nGJ
+├   ├ /coins/6326MYKywzye6U8ex9Bf
+├   ├ /coins/AAUyreA96f0qlkAj54gk
+├   └ [+12 more paths]
+├ ○ /contact                                     913 B          96.7 kB
+├ ○ /forgot                                      1.36 kB         237 kB
+├ ○ /forgot/login                                1 kB            208 kB
+├ ○ /join                                        914 B          96.7 kB
+├ ○ /marketing                                   1.37 kB        97.1 kB
+├ ● /new (940 ms)                                2.59 kB         209 kB
+├ ○ /partners                                    812 B          96.6 kB
+├ ○ /signup (973 ms)                             4.74 kB         130 kB
+└ ○ /submit (2120 ms)                            33.3 kB         260 kB
++ First Load JS shared by all                    112 kB
+  ├ chunks/framework-66d32731bdd20e83.js         45.2 kB
+  ├ chunks/main-bac2f07e2c919777.js              31.8 kB
+  ├ chunks/pages/_app-8b68aee73592ff2e.js        17.8 kB
+  ├ chunks/webpack-36d12a75f0098f30.js           1.05 kB
+  └ css/b68521ff647274b0.css                     16.5 kB
+
+[info] 
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+   (ISR)      incremental static regeneration (uses revalidate in getStaticProps)
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • Image Optimization
+[info]  • use of revalidate /coins/[coinId]
+[info]  • non-static route /api/auth/[...nextauth]
+[info]  • non-static route /api/auth/signup
+[info] 
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/0YsK7wJlkHAWHmjRWKeK due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/2F4hJRzwLeiy5pmUWUd5 due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/3JQjLJzbhBBYGA5DiKQD due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/3kL1gqhX7wxxKgah9nGJ due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/6326MYKywzye6U8ex9Bf due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/AAUyreA96f0qlkAj54gk due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/AjVcFIKC123VEE9Kc1XD due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/GaKpTtn8a8QFOkYmW5Vh due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/RnAb27Y2kf2kKbUsActN due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/TMXtx8U2UW29Fagtp9JM due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/U8RpoEnrn0yFO48voT7E due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/W9um7pJdR7xvVXNbCDLY due to revalidate
+[debug] [2023-12-30T17:53:25.972Z] skipping /coins/XuTaLKYtrYRtaYRqBmI3 due to revalidate
+[debug] [2023-12-30T17:53:25.973Z] skipping /coins/agLaOn4QShJ8LXoEovrX due to revalidate
+[debug] [2023-12-30T17:53:25.973Z] skipping /coins/cs2rgBFnZCoA8nV5MkHk due to revalidate
+[debug] [2023-12-30T17:53:25.973Z] skipping /coins/dU1hvSKstUcEmWzgjdV2 due to revalidate
+[debug] [2023-12-30T17:53:25.973Z] skipping /coins/sR9jmIwsEP12dBLKpLUF due to revalidate
+[debug] [2023-12-30T17:53:25.973Z] skipping /coins/uZC9NMS52C95cdWIfV8G due to revalidate
+[debug] [2023-12-30T17:53:25.973Z] skipping /coins/wLjdOe8vJtQME2YcSTEL due to revalidate
+[debug] [2023-12-30T17:53:28.468Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 [none]
+[debug] [2023-12-30T17:53:29.521Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 200
+[debug] [2023-12-30T17:53:29.521Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fresh-token-d3bc1/sites/fresh-token-d3bc1 {"name":"projects/fresh-token-d3bc1/sites/fresh-token-d3bc1","defaultUrl":"https://fresh-token-d3bc1.web.app","type":"DEFAULT_SITE"}
+[debug] [2023-12-30T17:53:45.830Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at prepareFrameworks (C:\Users\osman\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:372:42)
+    at async deploy (C:\Users\osman\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
